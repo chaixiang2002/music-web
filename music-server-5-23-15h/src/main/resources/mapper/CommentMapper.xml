@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.yin.mapper.CommentMapper">
+    <resultMap id="BaseResultMap" type="com.example.yin.model.domain.Comment">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="user_id" property="userId" jdbcType="INTEGER"/>
+        <result column="song_id" property="songId" jdbcType="INTEGER"/>
+        <result column="song_list_id" property="songListId" jdbcType="INTEGER"/>
+        <result column="content" property="content" jdbcType="VARCHAR"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="type" property="type" jdbcType="TINYINT"/>
+        <result column="up" property="up" jdbcType="INTEGER"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id
+        , user_id, song_id, song_list_id, content, create_time, type, up
+    </sql>
+    <update id="updateUp">
+        update comment
+        set up = up + (#{change})
+        where id = #{commentId}
+    </update>
+    <select id="getSongCommentList" resultType="com.example.yin.model.vo.CommentVo">
+        select co.id           id,
+               co.song_id      songId,
+               co.song_list_id songListId,
+               co.content      content,
+               co.create_time  createTime,
+               co.type         type,
+               co.up           up,
+               c.id            userId,
+               c.username      userName,
+               c.avator
+        from comment co
+                 left join consumer c on co.user_id = c.id
+        where co.song_id = #{songId}
+        order by co.create_time desc
+    </select>
+    <select id="getSongListCommentList" resultType="com.example.yin.model.vo.CommentVo">
+
+        select co.id           id,
+               co.song_id      songId,
+               co.song_list_id songListId,
+               co.content      content,
+               co.create_time  createTime,
+               co.type         type,
+               co.up           up,
+               c.id            userId,
+               c.username      userName,
+               c.avator
+        from comment co
+                 left join consumer c on co.user_id = c.id
+        where co.song_list_id = #{songListId}
+        order by co.create_time desc
+    </select>
+
+</mapper>
