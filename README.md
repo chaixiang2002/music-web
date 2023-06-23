@@ -34,35 +34,35 @@ springboot+mysql+redis
 
 ## 项目展示
 1. 首页
-      ![a](../music-web/img/首页.png)
+      ![a](img/首页.png)
 2. 歌曲播放页面
-   ![a](../music-web/img/歌曲播放页面.png)
+   ![a](img/歌曲播放页面.png)
 3. 歌手
 
-   ![a](https://github.com/chaixiang2002/music-web/tree/master/img/歌手.png)
+   ![a](img/歌手.png)
 4. 歌单
 
 
-   ![a]([../music-web/img](https://github.com/chaixiang2002/music-web/tree/master/img)/歌单.png)
+   ![a](img)/歌单.png)
 
 5. 歌单详情
 
-   ![a](https://github.com/chaixiang2002/music-web/tree/master/img/%E6%AD%8C%E5%8D%95%E8%AF%A6%E6%83%85.png)
+   ![a](img/%E6%AD%8C%E5%8D%95%E8%AF%A6%E6%83%85.png)
 6. 推荐
-   ![a](https://github.com/chaixiang2002/music-web/tree/master/img/推荐.png)
+   ![a](img/推荐.png)
 7. 用户个人资料
-   ![a](https://github.com/chaixiang2002/music-web/tree/master/img/用户个人资料.png)
+   ![a](img/用户个人资料.png)
 
 ## 后台
 
 8. 后台首页
-   ![a](https://github.com/chaixiang2002/music-web/tree/master/img/后台首页.png)
+   ![a](img/后台首页.png)
 9. 后台歌手歌曲
 
-   ![a](https://github.com/chaixiang2002/music-web/tree/master/img/后台歌手歌曲.png)
+   ![a](img/后台歌手歌曲.png)
 10. 后台歌手
 
-   ![a](https://github.com/chaixiang2002/music-web/tree/master/img/后台歌手.png)
+   ![a](img/后台歌手.png)
    11. 后台歌单的删选
-   ![a](https://github.com/chaixiang2002/music-web/tree/master/img/后台歌单的删选.png)
+   ![a](img/后台歌单的删选.png)
 
