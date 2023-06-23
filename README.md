@@ -41,9 +41,7 @@ springboot+mysql+redis
 
    ![a](img/歌手.png)
 4. 歌单
-
-
-   ![a](img)/歌单.png)
+   ![a](img/歌单.png)
 
 5. 歌单详情
 
